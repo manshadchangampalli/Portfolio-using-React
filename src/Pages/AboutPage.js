@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../Components/Title'
-import ImageSection from './ImageSection'
+import ImageSection from '../Components/ImageSection'
 
 function AboutPage() {
     return (
