@@ -8,7 +8,11 @@ function Skills({skill,progress}) {
                 <div className="skill-bar">
                     <p className="skill-text">{progress}</p>
                     <div className="skill-progress">
-                        
+                        <div className="progress-before">
+                            <div style={{width: progress}} className="progress-after">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

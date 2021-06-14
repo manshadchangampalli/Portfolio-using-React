@@ -71,9 +71,14 @@
 
 // skill section ............
 
-
+.skill-container{
+    margin: 3.5rem 0;
+    grid-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 .skillsection{
-    margin: 4.5rem 0;
+    margin: 1rem 0;
     
 
     .skillcontainer{
@@ -83,33 +88,33 @@
             font-weight: 400;
         }
         .skill-bar{
-            margin-right: 70%;
             
+
             .skill-text{
 
             }
             .skill-progress{
                 position: relative;
-                &::before{
+
+                .progress-before{
                     position: absolute;
-                    content: "";
-                    width: 100%;
+                    width: 25rem;
                     left: 3rem;
                     border-radius: 10px;
                     bottom: .65rem;
                     height: .4rem;
                     background-color: #683ab780;
+
+                    .progress-after{
+                        position: absolute;
+                        background-color: #673ab7;
+                        height:.4rem ;
+                        left: 0;
+                        border-radius: 10px;
+                        bottom: 0;
+                    }
                 }
-                &::after{
-                    content: "";
-                    position: absolute;
-                    background-color: #673ab7;
-                    width: 70%;
-                    height:.4rem ;
-                    left: 3rem;
-                    border-radius: 10px;
-                    bottom: .65rem;
-                }
+                
             }
         }
     }
