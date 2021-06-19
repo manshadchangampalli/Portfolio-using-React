@@ -2,13 +2,14 @@ import React from "react";
 import Title from "../Components/Title";
 import ImageSection from "../Components/ImageSection";
 import Skills from "../Components/Skills";
-import ServieceSection from '../Components/ServieceSection'
+import ServieceSection from "../Components/ServieceSection";
 
 function AboutPage() {
   return (
     <div className="aboutpage">
       <Title title="About Me" span="About Me" />
       <ImageSection />
+      {/* skill section  */}
       <Title title="My Skills" span="My Skills" />
       <div className="skill-container">
         <Skills skill="Javascript" progress="70%" />
@@ -18,8 +19,14 @@ function AboutPage() {
         <Skills skill="Nodejs" progress="30%" />
         <Skills skill="Python" progress="15%" />
       </div>
-      <Title title="Servieces" span="Servieces"/>
-      <ServieceSection/>
+      {/* serviece section  */}
+      <Title title="Servieces" span="Servieces" />
+      <div className="serviece-container">
+        <ServieceSection Image="" />
+        <ServieceSection Image="" />
+        <ServieceSection Image="" />
+
+      </div>
     </div>
   );
 }
