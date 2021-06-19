@@ -2,6 +2,7 @@ import React from "react";
 import Title from "../Components/Title";
 import ImageSection from "../Components/ImageSection";
 import Skills from "../Components/Skills";
+import ServieceSection from '../Components/ServieceSection'
 
 function AboutPage() {
   return (
@@ -17,6 +18,8 @@ function AboutPage() {
         <Skills skill="Nodejs" progress="30%" />
         <Skills skill="Python" progress="15%" />
       </div>
+      <Title title="Servieces" span="Servieces"/>
+      <ServieceSection/>
     </div>
   );
 }
